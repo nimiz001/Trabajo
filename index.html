@@ -10,10 +10,12 @@
         <img id="paredes" src="grishielo.jpg">
         <img id="fondo360" src="fondo_360_2.jpg">
         <img id="encimera" src="marmolrosa.jpg">
-         <img id="encimera2" src="mármolazul.jpg">
-        <a-asset-item id="deposito" src="Deposito de Agua.glb"></a-asset-item>
+        <img id="encimera2" src="mármolazul.jpg">
+         
+         <a-asset-item id="deposito" src="Deposito de Agua.glb"></a-asset-item>
          <a-asset-item id="semaforo" src="Semáforo (3D).glb"></a-asset-item>
          <a-asset-item id="semaforo2" src="Semaforo.glb"></a-asset-item>
+         <a-asset-item id="jarra" src="Jarra.glb"></a-asset-item>
       </a-asset>
        <a-box position ="2 1.35 -4" src="#paredes" depth="0.05" height="1" width="2"></a-box>
        <a-box position ="-2 1.35 -4" src="#paredes" depth="0.05" height="1" width="2"></a-box>
@@ -40,9 +42,13 @@
 </a-cylinder>
 <a-cylinder position ="2.65 0.86 -1.1" color="cyan" height="0.05" radius="0.2"></a-cylinder>
   <a-entity gltf-model="#semaforo" position="2.65 0.86 -1.1" scale="8 8 8" rotation="0 0 0" animation="property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true; dir: normal"></a-entity>
-<a-cylinder position ="-2.65 0.86 -1.1" color="cyan" height="0.05" radius="0.2"></a-cylinder>
- <a-entity gltf-model="#semaforo2" position="-2.65 0.86 -1.1" scale="5 5 5" rotation="0 0 0" animation="property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true; dir: normal"></a-entity>
-<a-box position="0 0 -0.5" depth="0.1" height="0.1" width="0.1" animation="property: position; to: 1 8 -10; dur: 2000; easing: linear; dir: altenative; loop: true" color="tomato"></a-box>
+
+  <a-cylinder position ="0 0.86 -2" color="cyan" height="0.05" radius="0.2"></a-cylinder>
+<a-entity gltf-model="#jarra" position="0 0.86 -2" scale="5 5 5"></a-entity>
+
+<a-cylinder position ="0 0.86 -1.1" color="cyan" height="0.05" radius="0.2"></a-cylinder>
+
+ <a-box position="0 0 -0.5" depth="0.1" height="0.1" width="0.1" animation="property: position; to: 1 8 -10; dur: 2000; easing: linear; dir: altenative; loop: true" color="tomato"></a-box>
 <a-box position="0 0 0" depth="0.5" height="0.5" width="0.5" animation="property: rotation; to: 0 360 0; loop: true; dur: 1000" animation__02="property: position; to: 0 5 0; dur: 2000; easing: linear; dir: alternate; loop: true" color="orange"></a-box>
  <a-entity gltf-model="#losobjetos" position="0.5 0.5 -0.8" scale="20 20 20"></a-entity>
 <!-- Cielo con imagen 360 -->
