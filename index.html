@@ -11,7 +11,7 @@
         <img id="fondo360" src="fondo_360_2.jpg">
         <img id="encimera" src="marmolrosa.jpg">
         <img id="encimera2" src="mármolazul.jpg">
-        <audio id="musica" src="cooking-food-advertising-background-music-312872.mp3" preload="auto"></audio>
+        <audio id="musica" src="cooking-food-advertising-background-music-312872.mp3" autoply: true"></audio>
          
          <a-asset-item id="deposito" src="Deposito de Agua.glb"></a-asset-item>
          <a-asset-item id="semaforo" src="Semáforo (3D).glb"></a-asset-item>
@@ -19,8 +19,8 @@
          <a-asset-item id="jarra" src="Jarra.glb"></a-asset-item>
          <a-asset-item id="avion" src="Avión.glb"></a-asset-item>
       </a-asset>
-  <a-entity sound="src: #musica"></a-entity>
-       <a-box position ="2 1.35 -4" src="#paredes" depth="0.05" height="1" width="2"></a-box>
+  
+       <a-box position ="2 1.35 -4" src="#paredes" depth="0.05" height="1" width="2" sound="src: #musica; autoplay: true"></a-box>
        <a-box position ="-2 1.35 -4" src="#paredes" depth="0.05" height="1" width="2"></a-box>
     <a-box position ="0 0.3 -4" src="#paredes" depth="0.05" height="1.1" width="6"></a-box>
     <a-box position ="0 2.05 -4" src="#paredes" depth="0.05" height="0.4" width="6"></a-box>
